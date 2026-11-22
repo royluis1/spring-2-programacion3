@@ -1,4 +1,14 @@
-// Etiqueta con el color de la categoría. Se implementa en la US6 (#main-s2-us6).
-export default function CategoryBadge() {
-  return null;
+import { getCategory } from '../data/categories';
+import '../styles/category-badge.css';
+
+// Etiqueta con el nombre y el color de la categoría de un gasto.
+export default function CategoryBadge({ categoryId }) {
+  const category = getCategory(categoryId);
+  const color = category ? category.color : 'var(--color-text-secondary)';
+
+  return (
+    <span className="category-badge" style={{ '--badge-color': color }}>
+      {category ? category.name : 'Sin categoría'}
+    </span>
+  );
 }
