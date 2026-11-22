@@ -1,0 +1,38 @@
+/* Botones reutilizables (equivalen a PrimaryButton.js del Sprint 1).
+   Se aplican tanto a <button> como a <Link>. */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--touch-target);
+  padding: 12px 20px;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.button--outline {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+/* Retroalimentación táctil (equivale a activeOpacity de TouchableOpacity). */
+.button:active {
+  opacity: 0.75;
+  transform: scale(0.98);
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--color-primary-dark);
+  outline-offset: 2px;
+}
