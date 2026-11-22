@@ -59,3 +59,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* Elimina la demora del doble toque para zoom en los elementos táctiles:
+   los toques responden de inmediato, como en una app nativa. */
+a,
+button,
+input,
+label,
+select {
+  touch-action: manipulation;
+}

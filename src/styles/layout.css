@@ -6,6 +6,28 @@
   padding-bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom));
 }
 
+/* Transición suave al cambiar de pantalla. */
+.page-transition {
+  animation: page-enter 0.22s ease-out;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-transition {
+    animation: none;
+  }
+}
+
 /* Mensaje temporal (equivale al Alert del Sprint 1). */
 .toast {
   position: fixed;

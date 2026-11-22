@@ -1,5 +1,6 @@
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import CategoryBadge from '../components/CategoryBadge';
+import CategoryIcon from '../components/CategoryIcon';
 import PageHeader from '../components/PageHeader';
 import { getExpenseById } from '../data/mockExpenses';
 import '../styles/detail.css';
@@ -42,6 +43,7 @@ export default function ExpenseDetailScreen() {
       <PageHeader title="Detalle del gasto" onBack={goBack} />
       <main className="page-content detail">
         <section className="detail__header" aria-labelledby="detail-title">
+          <CategoryIcon categoryId={expense.categoryId} size={72} />
           <h2 id="detail-title" className="detail__description">
             {expense.description}
           </h2>

@@ -1,13 +1,39 @@
+/* Tarjeta flotante sobre la barra inferior: al aparecer no desplaza el contenido
+   (evita el Cumulative Layout Shift que marcaba Lighthouse). */
 .install-banner {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: calc(var(--bottom-nav-height) + 12px + env(safe-area-inset-bottom));
+  z-index: 15;
+  max-width: 536px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 12px 16px 0;
   padding: 12px;
+  animation: install-banner-in 0.3s ease;
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  box-shadow: 0 4px 16px rgba(28, 36, 33, 0.08);
+  box-shadow: 0 8px 24px rgba(28, 36, 33, 0.18);
+}
+
+@keyframes install-banner-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .install-banner {
+    animation: none;
+  }
 }
 
 .install-banner__icon {
