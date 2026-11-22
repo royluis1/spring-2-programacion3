@@ -1,0 +1,83 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 24px;
+}
+
+.detail__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.detail__description {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.detail__amount {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.detail__card {
+  margin: 0;
+  padding: 0 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface);
+}
+
+.detail__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.detail__row:last-child {
+  border-bottom: none;
+}
+
+.detail__row dt {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+.detail__row dd {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.detail__row--notes {
+  align-items: flex-start;
+}
+
+.detail__row--notes dd {
+  font-weight: 400;
+}
+
+.detail--empty {
+  align-items: center;
+  text-align: center;
+  padding-top: 48px;
+  gap: 12px;
+}
+
+.detail__empty-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.detail__empty-text {
+  color: var(--color-text-secondary);
+  margin-bottom: 12px;
+}
