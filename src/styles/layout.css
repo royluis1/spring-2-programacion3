@@ -1,0 +1,32 @@
+/* Layout principal de la app. */
+.app-layout {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Mensaje temporal (equivale al Alert del Sprint 1). */
+.toast {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 20;
+  max-width: 528px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-text);
+  color: var(--color-white);
+  font-size: 15px;
+  line-height: 1.4;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.toast[data-visible='true'] {
+  opacity: 1;
+  transform: translateY(0);
+}
