@@ -1,0 +1,13 @@
+.category-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  border-radius: 50%;
+  color: var(--icon-color);
+  /* Fondo del mismo color pero muy claro (como el color + '22' del Sprint 1). */
+  background-color: color-mix(in srgb, var(--icon-color) 14%, transparent);
+  font-size: calc(var(--icon-size) * 0.5);
+}

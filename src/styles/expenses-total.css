@@ -1,0 +1,26 @@
+.expenses-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 14px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.expenses-total__label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.expenses-total__count {
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.expenses-total__amount {
+  font-size: 22px;
+  font-weight: 700;
+}

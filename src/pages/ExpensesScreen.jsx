@@ -1,5 +1,6 @@
 import { useOutletContext } from 'react-router-dom';
 import ExpenseCard from '../components/ExpenseCard';
+import ExpensesTotal from '../components/ExpensesTotal';
 import PageHeader from '../components/PageHeader';
 import MOCK_EXPENSES from '../data/mockExpenses';
 import '../styles/expenses.css';
@@ -32,6 +33,7 @@ export default function ExpensesScreen() {
             </li>
           ))}
         </ul>
+        <ExpensesTotal expenses={MOCK_EXPENSES} />
       </main>
     </>
   );

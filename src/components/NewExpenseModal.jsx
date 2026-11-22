@@ -114,7 +114,10 @@ export default function NewExpenseModal({ open, onClose, onSave }) {
                   defaultChecked={index === 0}
                   className="chip__input"
                 />
-                <span className="chip__text">{category.name}</span>
+                <span className="chip__text">
+                  <category.Icon className="chip__icon" aria-hidden="true" />
+                  {category.name}
+                </span>
               </label>
             ))}
           </div>
