@@ -1,0 +1,65 @@
+.install-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 16px 0;
+  padding: 12px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 16px rgba(28, 36, 33, 0.08);
+}
+
+.install-banner__icon {
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+.install-banner__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.install-banner__title {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.install-banner__subtitle {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.install-banner__actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.install-banner__install,
+.install-banner__close {
+  min-height: var(--touch-target);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.install-banner__install {
+  padding: 0 14px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.install-banner__close {
+  min-width: var(--touch-target);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: 16px;
+}
+
+.install-banner__install:active,
+.install-banner__close:active {
+  opacity: 0.7;
+}
