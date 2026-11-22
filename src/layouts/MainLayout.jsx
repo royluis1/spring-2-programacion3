@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
+import BottomNav from '../components/BottomNav';
 import InstallBanner from '../components/InstallBanner';
 import NewExpenseModal from '../components/NewExpenseModal';
 import { formatCurrency } from '../utils/format';
 import '../styles/layout.css';
 
-// Layout persistente de la app (equivale al TabNavigator del Sprint 1).
-// La Bottom Navigation Bar se agrega en la US7 (#pwa-s2-us7).
+// Layout persistente de la app (equivale al TabNavigator del Sprint 1):
+// las páginas se dibujan en el <Outlet> y la Bottom Navigation Bar queda siempre visible.
+// También maneja el formulario de alta (modal) y el mensaje temporal al guardar.
 export default function MainLayout() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [toast, setToast] = useState('');
@@ -39,6 +41,8 @@ export default function MainLayout() {
       <p className="toast" role="status" aria-live="polite" data-visible={Boolean(toast)}>
         {toast}
       </p>
+
+      <BottomNav />
 
       <NewExpenseModal open={isModalOpen} onClose={closeNewExpense} onSave={handleSave} />
     </div>

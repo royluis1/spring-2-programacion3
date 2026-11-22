@@ -1,0 +1,104 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings__section {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  margin: 0 0 8px 4px;
+}
+
+.settings__card {
+  margin: 0;
+  padding: 0 16px;
+  list-style: none;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background-color: var(--color-surface);
+}
+
+.settings__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 56px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.settings__row:last-child {
+  border-bottom: none;
+}
+
+.settings__text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  cursor: pointer;
+}
+
+.settings__title {
+  font-size: 16px;
+}
+
+.settings__subtitle {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.settings__value {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  text-align: right;
+}
+
+/* Checkbox nativo con apariencia de interruptor. */
+.switch {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  flex-shrink: 0;
+  width: 52px;
+  height: 32px;
+  margin: 6px 0;
+  border-radius: 16px;
+  background-color: var(--color-border);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.switch::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.switch:checked {
+  background-color: var(--color-primary);
+}
+
+.switch:checked::before {
+  transform: translateX(20px);
+}
+
+.switch:active {
+  opacity: 0.8;
+}
+
+.switch:focus-visible {
+  outline: 3px solid var(--color-primary-dark);
+  outline-offset: 2px;
+}

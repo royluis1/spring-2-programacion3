@@ -2,6 +2,8 @@
 .app-layout {
   min-height: 100vh;
   min-height: 100dvh;
+  /* Reserva el espacio de la barra inferior fija para que no tape el contenido. */
+  padding-bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom));
 }
 
 /* Mensaje temporal (equivale al Alert del Sprint 1). */
@@ -9,7 +11,7 @@
   position: fixed;
   left: 16px;
   right: 16px;
-  bottom: calc(16px + env(safe-area-inset-bottom));
+  bottom: calc(var(--bottom-nav-height) + 12px + env(safe-area-inset-bottom));
   z-index: 20;
   max-width: 528px;
   margin: 0 auto;
