@@ -174,12 +174,12 @@ Bonus realizado:
 
 | Pantalla | Expo Go (Sprint 1) | PWA instalada (Sprint 2) |
 | --- | --- | --- |
-| Bienvenida | <img src="docs/screenshots/telefono/expo-go-bienvenida.jpg" width="200"> | <!-- pwa-bienvenida --> _pendiente_ |
-| Listado | <img src="docs/screenshots/telefono/expo-go-listado.jpg" width="200"> | <!-- pwa-listado --> _pendiente_ |
+| Bienvenida | <img src="docs/screenshots/telefono/expo-go-bienvenida.jpg" width="200"> | <img src="docs/screenshots/telefono/pwa-bienvenida.jpg" width="200"> |
+| Listado | <img src="docs/screenshots/telefono/expo-go-listado.jpg" width="200"> | <img src="docs/screenshots/telefono/pwa-listado.jpg" width="200"> |
 | Detalle | <img src="docs/screenshots/telefono/expo-go-detalle.jpg" width="200"> | <!-- pwa-detalle --> _pendiente_ |
-| Nuevo gasto | <img src="docs/screenshots/telefono/expo-go-formulario.jpg" width="200"> | <!-- pwa-formulario --> _pendiente_ |
+| Nuevo gasto | <img src="docs/screenshots/telefono/expo-go-formulario.jpg" width="200"> | <img src="docs/screenshots/telefono/pwa-formulario.jpg" width="200"> |
 | Gasto registrado | <img src="docs/screenshots/telefono/expo-go-guardado.jpg" width="200"> | <!-- pwa-guardado --> _pendiente_ |
-| Ajustes | <img src="docs/screenshots/telefono/expo-go-ajustes.jpg" width="200"> | <!-- pwa-ajustes --> _pendiente_ |
+| Ajustes | <img src="docs/screenshots/telefono/expo-go-ajustes.jpg" width="200"> | <img src="docs/screenshots/telefono/pwa-ajustes.jpg" width="200"> |
 
 ### Vista previa (navegador en tamaño de teléfono)
 
