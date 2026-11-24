@@ -10,7 +10,7 @@ IndexedDB, localStorage, Context ni APIs remotas).
 
 **Autor:** roy luis garro ([@royluis1](https://github.com/royluis1))
 
-**URL pública (HTTPS):** _pendiente de publicar_ <!-- reemplazar por la URL de Vercel o Netlify -->
+**URL pública (HTTPS):** https://spring-2-programacion3.vercel.app
 
 ---
 
@@ -155,7 +155,7 @@ se oculta cuando la app se abre instalada (`navigator.standalone`).
 | #main-s2-us5 | Migrar formulario de carga de gastos | ✅ |
 | #main-s2-us6 | Migrar listado y detalle de gastos | ✅ |
 | #pwa-s2-us7 | Integrar todas las vistas con navegación app-like | ✅ |
-| #pwa-s2-us8 | Service Worker, modo offline y publicación | ✅ (falta publicar en Vercel/Netlify) |
+| #pwa-s2-us8 | Service Worker, modo offline y publicación | ✅ Publicada en Vercel |
 | #pwa-s2-us9 | Bonus 2 | ✅ Parcial (ver abajo) |
 
 Bonus realizado:
@@ -164,7 +164,7 @@ Bonus realizado:
 - Colores por categoría y total de gastos al final del listado.
 - Transiciones CSS entre pantallas (desactivadas si el sistema pide reducir el movimiento).
 - `touch-action: manipulation` en los elementos táctiles: elimina la espera del doble toque, los toques responden al instante.
-- Lighthouse mejorado a 100 en todas las categorías. El banner de instalación generaba un salto de layout
+- Lighthouse mejorado (100 en todas las categorías sobre la versión local; 96/100/100/100 sobre la URL publicada). El banner de instalación generaba un salto de layout
   (CLS 0,15) y ahora flota sobre la barra inferior. Además se corrigió el contraste de textos y colores de categoría
   y se agregó `robots.txt`.
 
@@ -176,9 +176,9 @@ Bonus realizado:
 | --- | --- | --- |
 | Bienvenida | <img src="docs/screenshots/telefono/expo-go-bienvenida.jpg" width="200"> | <img src="docs/screenshots/telefono/pwa-bienvenida.jpg" width="200"> |
 | Listado | <img src="docs/screenshots/telefono/expo-go-listado.jpg" width="200"> | <img src="docs/screenshots/telefono/pwa-listado.jpg" width="200"> |
-| Detalle | <img src="docs/screenshots/telefono/expo-go-detalle.jpg" width="200"> | <!-- pwa-detalle --> _pendiente_ |
+| Detalle | <img src="docs/screenshots/telefono/expo-go-detalle.jpg" width="200"> | <img src="docs/screenshots/telefono/pwa-detalle.jpg" width="200"> |
 | Nuevo gasto | <img src="docs/screenshots/telefono/expo-go-formulario.jpg" width="200"> | <img src="docs/screenshots/telefono/pwa-formulario.jpg" width="200"> |
-| Gasto registrado | <img src="docs/screenshots/telefono/expo-go-guardado.jpg" width="200"> | <!-- pwa-guardado --> _pendiente_ |
+| Gasto registrado | <img src="docs/screenshots/telefono/expo-go-guardado.jpg" width="200"> | <img src="docs/screenshots/telefono/pwa-guardado.jpg" width="200"> |
 | Ajustes | <img src="docs/screenshots/telefono/expo-go-ajustes.jpg" width="200"> | <img src="docs/screenshots/telefono/pwa-ajustes.jpg" width="200"> |
 
 ### Vista previa (navegador en tamaño de teléfono)
@@ -199,7 +199,7 @@ Banner de instalación en iOS:
 
 ![Informe de Lighthouse](docs/screenshots/lighthouse.png)
 
-_Auditoría sobre `npm run preview` (versión de producción). Lighthouse 13, modo Mobile._
+_Auditoría sobre la URL publicada (https://spring-2-programacion3.vercel.app), Lighthouse 13, modo Mobile: Performance 96, Accessibility 100, Best Practices 100, SEO 100._
 
 ## Diferencias entre ambas implementaciones
 
